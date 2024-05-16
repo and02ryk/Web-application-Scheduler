@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "b1dc248a-e623-4cd1-9da0-1ee747b3adbe",
+		"name": "New Collection",
+		"description": "This is a collection for testing web-application conference",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34978540"
+	},
+	"item": [
+		{
+			"name": "Find all users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Find user by Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"firstName\": \"testFirstNameAdd\",\r\n        \"lastName\": \"testLastNameAdd\",\r\n        \"login\": \"testLoginAdd\",\r\n        \"password\": \"testPasswordAdd\",\r\n        \"role\": \"testRoleAdd\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8088/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Update user by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"firstName\": \"2testFirstNameAdd2\",\r\n        \"lastName\": \"2testLastNameAdd2\",\r\n        \"login\": \"2testLoginAdd2\",\r\n        \"password\": \"2testPasswordAdd2\",\r\n        \"role\": \"2testRoleAdd2\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8088/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8088/users/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Find all schedule",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Find schedule by RoomId",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
